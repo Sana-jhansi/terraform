@@ -7,3 +7,13 @@ variable "instance_type" {
     type = string
     default = "t2.micro"
 }
+
+variable "x" {}
+variable "list"{
+    default =[1,2,3]
+}
+
+output "x"
+{
+    value = var.x
+}
