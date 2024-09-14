@@ -5,3 +5,10 @@ Plan
 Apply
 Destroy
 
+Terraform Providers
+-----------------------
+AWS
+GCP
+Azure etc.
+
+
