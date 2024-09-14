@@ -1,0 +1,7 @@
+Terraform lifecycle-
+----
+Init
+Plan
+Apply
+Destroy
+
