@@ -24,3 +24,20 @@ terraform {
 provider "aws" {
   # Configuration options
 }
+
+resource "resourcename as defined by terraform" "local resource identification name" {
+    arguments .....
+}
+
+resource "aws_s3_bucket" "abc" {
+
+}
+
+resource "aws_s3_bucket" "example" {
+  bucket = "my-tf-test-bucket"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
