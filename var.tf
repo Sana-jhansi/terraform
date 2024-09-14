@@ -8,12 +8,13 @@ variable "instance_type" {
     default = "t2.micro"
 }
 
-variable "x" {}
+variable "x" {
+    default = "jhansi"
+}
 variable "list"{
     default =[1,2,3]
 }
 
-output "x"
-{
+output "x" {
     value = var.x
 }
