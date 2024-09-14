@@ -8,7 +8,7 @@ variable "instance_type" {
     default = "t2.micro"
 }
 
-variable "x" {
+variable "name" {
     default = "jhansi"
 }
 variable "list"{
