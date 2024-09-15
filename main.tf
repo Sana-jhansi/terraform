@@ -24,5 +24,8 @@ resource "aws_s3_bucket" "jhansi" {
 resource "aws_instance" "example"{
     ami = var.ami
     instance_type = var.instance_type
-    name = var.name
+    
+    tags = {
+      Name = "var.name"
+    }
 }
