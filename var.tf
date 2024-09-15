@@ -15,6 +15,6 @@ variable "list"{
     default =[1,2,3]
 }
 
-output "x" {
-    value = var.x
+output "Name of instance" {
+    value = var.name
 }
