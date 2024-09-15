@@ -8,9 +8,6 @@ variable "instance_type" {
     default = "t2.micro"
 }
 
-variable "name" {
-    default = "jhansi"
-}
 variable "list"{
     default =[1,2,3]
 }
