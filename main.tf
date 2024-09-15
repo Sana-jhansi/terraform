@@ -21,7 +21,7 @@ resource "aws_s3_bucket" "jhansi" {
 
 }
 
-resource "aws_instance_state" "example"{
+resource "aws_ec2_instance_state" "example"{
     ami = var.ami
     instance_type = var.instance_type
     state = "stopped"
