@@ -8,13 +8,13 @@ terraform {
   }
 
 backend "s3"{
-    bucket = aws_s3_bucket.jhansi.id 
+    bucket = mybucket98193
     key    = "mytf/terraform.tfstate"
     region = "us-east-1" 
 
        
     # For State Locking
-    dynamodb_table = "project-tf"    
+    dynamodb_table = "jhansi"    
   } 
 }
 provider "aws" {
