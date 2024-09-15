@@ -21,10 +21,11 @@ resource "aws_s3_bucket" "jhansi" {
 
 }
 
-resource "aws_instance" "example"{
+resource "aws_instance_state" "example"{
     ami = var.ami
     instance_type = var.instance_type
-    aws_instance_state = "stopped"
+    state = "stopped"
+   
     
     tags = {
       Name = var.Name
