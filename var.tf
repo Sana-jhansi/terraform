@@ -12,3 +12,7 @@ variable "list"{
     default =[1,2,3]
 }
 
+variable "Name"{
+    default = "jhansisana"
+}
+
