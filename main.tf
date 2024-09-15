@@ -24,6 +24,7 @@ resource "aws_s3_bucket" "jhansi" {
 resource "aws_instance" "example"{
     ami = var.ami
     instance_type = var.instance_type
+    aws_instance_state="stopped"
     
     tags = {
       Name = var.Name
