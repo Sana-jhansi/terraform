@@ -21,13 +21,16 @@ resource "aws_s3_bucket" "jhansi" {
 
 }
 
-resource "aws_ec2_instance_state" "example"{
+resource "aws_instance" "example"{
     ami = var.ami
     instance_type = var.instance_type
-    state = "stopped"
-   
-    
+
     tags = {
       Name = var.Name
     }
+}
+
+resource "aws_ec2_instance_state" "example"{
+  instance_id = aws_instance.example.id
+  state       = "stopped"
 }
