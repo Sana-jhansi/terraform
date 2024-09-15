@@ -15,6 +15,3 @@ variable "list"{
     default =[1,2,3]
 }
 
-output "Name of instance" {
-    value = var.name
-}
