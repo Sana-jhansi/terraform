@@ -4,4 +4,4 @@ resource "aws_instance" "test" {
     
 }
 
-varaible "instance_type" {}
+variable "instance_type" {}
